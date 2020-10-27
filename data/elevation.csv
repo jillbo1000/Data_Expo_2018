@@ -1,0 +1,114 @@
+city,state,longitude,latitude,elevation,AirPtCd
+Eastport,Maine,-66.99,44.91,35,KBHB
+Bangor,Maine,-68.7833,44.8,46,KBGR
+Portland,Maine,-70.25,43.6667,45,KPWM
+Boston,Massachusetts,-71.0833,42.35,3,KBOS
+Providence,Rhode Island,-71.4,41.8333,48,KPVD
+Manchester,New Hampshire,-71.5,43,52,KMHT
+Montpelier,Vermont,-72.5333,44.25,256,KMPV
+Springfield,Massachusetts,-72.5667,42.1,59,KCEF
+New Haven,Connecticut,-72.9167,41.3167,10,KHVN
+Albany,New York,-73.75,42.6667,26,KALB
+New York,New York,-73.9667,40.7833,35,KNYC
+Atlantic City,New Jersey,-74.4167,39.3667,4,KACY
+Philadelphia,Pennsylvania,-75.1667,39.95,17,KPHL
+Dover,Delaware,-75.5267,39.1619,11,KDOV
+Scranton,Pennsylvania,-75.65,41.4,269,KAVP
+Watertown,New York,-75.9167,43.9667,149,KART
+Syracuse,New York,-76.1333,43.0333,177,KSYR
+Baltimore,Maryland,-76.6333,39.3,49,KDMH
+Richmond,Virginia,-77.4833,37.55,65,KOFP
+Wilmington,North Carolina,-77.95,34.2333,1,KILM
+Raleigh,North Carolina,-78.65,35.7667,94,KRDU
+Buffalo,New York,-78.8333,42.9167,198,KBUF
+Charleston,South Carolina,-79.9333,32.7833,7,KCHS
+Pittsburgh,Pennsylvania,-79.95,40.45,276,KAGC
+Roanoke,Virginia,-79.95,37.2833,304,KROA
+Miami,Florida,-80.2,25.7667,5,KMIA
+Charlotte,North Carolina,-80.8333,35.2333,227,KCLT
+Columbia,South Carolina,-81.0333,34,98,KCUB
+Savannah,Georgia,-81.0833,32.0833,10,KSVN
+Cleveland,Ohio,-81.6167,41.4667,252,KBKL
+Charleston,West Virginia,-81.6333,38.35,182,KCRW
+Jacksonville,Florida,-81.6667,30.3667,10,KNIP
+Key West,Florida,-81.8,24.55,2,KEYW
+Tampa,Florida,-82.45,27.95,5,KTPA
+Columbus,Ohio,-83.0167,40,226,KOSU
+Detroit,Michigan,-83.05,42.3333,183,KDET
+Knoxville,Tennessee,-83.9333,35.95,277,KTYS
+Sault Ste Marie,Michigan,-84.35,46.5,186,KANJ
+Atlanta,Georgia,-84.3833,33.75,309,KATL
+Cincinnati,Ohio,-84.5,39.1333,253,KLUK
+Grand Rapids,Michigan,-85.6667,42.9667,202,KGRR
+Louisville,Kentucky,-85.7667,38.25,139,KSDF
+Indianapolis,Indiana,-86.1667,39.7667,217,KEYE
+Montgomery,Alabama,-86.3,32.35,74,KMXF
+Nashville,Tennessee,-86.7833,36.1667,153,KBNA
+Birmingham,Alabama,-86.8333,33.5,172,KBHM
+Chicago,Illinois,-87.6167,41.8333,181,KMDW
+Milwaukee,Wisconsin,-87.9167,43.0333,179,KMKE
+Mobile,Alabama,-88.05,30.7,4,KBFM
+Springfield,Illinois,-89.6333,39.8,185,KSPI
+Memphis,Tennessee,-90.05,35.15,80,KMEM
+New Orleans,Louisiana,-90.0667,29.95,2,KNEW
+Jackson,Mississippi,-90.2,32.3333,95,KHKS
+St Louis,Missouri,-90.2,38.5833,127,KCPS
+Dubuque,Iowa,-90.6667,42.5167,191,KDBQ
+Duluth,Minnesota,-92.0833,46.8167,328,KDLH
+Hot Springs,Arkansas,-93.05,34.5167,252,KHOT
+Minneapolis,Minnesota,-93.2333,44.9833,254,KMSP
+Springfield,Missouri,-93.2833,37.2167,390,KSGF
+Des Moines,Iowa,-93.6167,41.5833,241,KDSM
+Shreveport,Louisiana,-93.7,32.4667,46,KBAD
+Kansas City,Missouri,-94.5833,39.1,271,KMKC
+Lincoln,Nebraska,-96.6667,40.8333,354,KLNK
+Sioux Falls,South Dakota,-96.7333,43.55,446,KFSD
+Dallas,Texas,-96.7667,32.7667,132,KDAL
+Fargo,North Dakota,-96.8,46.8667,275,KFAR
+Wichita,Kansas,-97.2833,37.7167,429,KAAO
+Oklahoma City,Oklahoma,-97.4667,35.4333,373,KTIK
+San Antonio,Texas,-98.55,29.3833,206,KSKF
+Pierre,South Dakota,-100.35,44.3667,448,KPIR
+North Platte,Nebraska,-100.767,41.1333,854,KLBF
+Bismarck,North Dakota,-100.783,46.8,499,KBIS
+Garden City,Kansas,-100.883,37.9667,866,KGCK
+Amarillo,Texas,-101.833,35.1833,1115,KAMA
+Carlsbad,New Mexico,-104.25,32.4333,961,KCNM
+Trinidad,Colorado,-104.5,37.1667,1866,KTAD
+Cheyenne,Wyoming,-104.867,41.15,1866,KCYS
+Denver,Colorado,-105,39.75,1583,KBJC
+Santa Fe,New Mexico,-105.95,35.6833,2120,KSAF
+El Paso,Texas,-106.483,31.7667,1137,KELP
+Grand Junction,Colorado,-108.55,39.0833,1414,KGJT
+Lander,Wyoming,-108.667,42.8333,1752,KLND
+Havre,Montana,-109.717,48.55,828,KHVR
+Nogales,Arizona,-110.933,31.35,1175,KOLS
+Provo,Utah,-111.6608,40.2444,1394,KPVU
+Flagstaff,Arizona,-111.683,35.2167,2262,KFLG
+Salt Lake City,Utah,-111.9,40.7667,1302,KSLC
+Idaho Falls,Idaho,-112.017,43.5,1444,KIDA
+Helena,Montana,-112.033,46.5833,1286,KHLN
+Phoenix,Arizona,-112.067,33.4833,336,KPHX
+Richfield,Utah,-112.083,38.7667,1621,KMLF
+St George,Utah,-113.5781,37.0953,801,KSGU
+Salmon,Idaho,-113.9,45.1833,1219,KSMN
+Needles,California,-114.6,34.8333,152,KEED
+Las Vegas,Nevada,-115.2,36.1667,663,KVGT
+Boise,Idaho,-116.217,43.6,838,KBOI
+Lewiston,Idaho,-117.033,46.4,245,KLWS
+Austin,Nevada,-117.067,39.4833,2112,KP68
+San Diego,California,-117.15,32.72,40,KSAN
+Spokane,Washington,-117.433,47.6667,580,KGEG
+Baker,Oregon,-117.833,44.7833,1046,KBKE
+Los Angeles,California,-118.25,34.05,85,KCQT
+Fresno,California,-119.8,36.7333,86,KFAT
+Reno,Nevada,-119.817,39.5,1392,KRNO
+Sacramento,California,-121.5,38.5833,9,KSAC
+Klamath Falls,Oregon,-121.733,42.1667,1245,KLMT
+Seattle,Washington,-122.333,47.6167,41,KBFI
+San Francisco,California,-122.433,37.7833,38,KSFO
+Portland,Oregon,-122.683,45.5167,36,KVUO
+Eugene,Oregon,-123.083,44.05,131,KEUG
+Hoquiam,Washington,-123.9,46.9833,3,KHQM
+Anchorage,Alaska,-149.9,61.2167,27,PAMR
+Honolulu,Hawaii,-157.8167,21.3,24,PHNL

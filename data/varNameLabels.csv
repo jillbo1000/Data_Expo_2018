@@ -1,0 +1,45 @@
+VarName,Label,LabelFull
+AirPtCd,Airport Code,Airport Code
+month,Month,Month
+lag,Forecast Lag,Forecast Lag
+Sd_Max_Temp,SD Max Temp,SD Max Temp
+Max_Temp,Max Temp,Max Temp
+Sd_Min_Temp,SD Min Temp,SD Min Temp
+Min_Temp,Min Temp,Min Temp
+Sd_Precip,SD Precip,SD Precip
+Mean_Precip,Mean Precip,Mean Precip
+Sd_Max_DewPoint,SD Max DP,SD Max Dew Point
+Max_DewPoint,Max DP,Max Dew Point
+Sd_Min_DewPoint,SD Min DP,SD Min Dew Point
+Min_DewPoint,Min DP,Min Dew Point
+Sd_Max_Humidity,SD Max Hum,SD Max Humidity
+Max_Humidity,Max Hum,Max Humidity
+Sd_Min_Humidity,SD Min Hum,SD Min Humidity
+Min_Humidity,Min Hum,Min Humidity
+Sd_Max_Sea_Level_Press,SD Max SLP,SD Max Sea Level Pressure
+Max_Sea_Level_Press,Max SLP,Max Sea Level Pressure
+Sd_Min_Sea_Level_Press,SD Min SLP,SD Min Sea Level Pressure
+Min_Sea_Level_Press,Min SLP,Min Sea Level Pressure
+Sd_Vis,SD Vis,SD Visibility
+Min_Vis,Min Vis,Min Visilibility
+Sd_CloudCover,SD Cloud Cover,SD Cloud Cover
+CloudCover,Cloud Cover,Cloud Cover
+Sd_Mean_Wind_Speed,SD Mean WS,SD Mean Wind Speed
+Mean_Wind_Speed,Mean WS,Mean Wind Speed
+Sd_Max_Wind_Speed,SD Max WS,SD Max Wind Speed
+Max_Wind_Speed,Max WS,Max Wind Speed
+mxT_sd,mxT_sd,mxT_sd
+mxT_mean,mxT_mean,mxT_mean
+mnT_sd,mnT_sd,mnT_sd
+mnT_mean,mnT_mean,mnT_mean
+mxT_sd_abs,mxT_sd_abs,mxT_sd_abs
+mxT_mean_abs,mxT_mean_abs,mxT_mean_abs
+mnT_sd_abs,mnT_sd_abs,mnT_sd_abs
+mnT_mean_abs,mnT_mean_abs,mnT_mean_abs
+BSS,BSS,BSS
+city,City,City
+state,State,State
+longitude,Longitude,Longitude
+latitude,Latitude,Latitude
+elevation,Elevation,Elevation
+dist2coast,Dist2Coast,Distance to Coast

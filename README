@@ -1,0 +1,301 @@
+This repository contains all of the code for the Data Expo entry, "Let's talk 
+about the weather" by Jill Lundell, Brennan Bean, and Juergen Symanzik and 
+for the accompanying paper. The following outlines some important information
+for running the code and documents the different files included in the 
+repository. Note that all of this code was written and checked in RStudio
+on Windows machines. It has not been checked with linux, Mac, or other R IDEs.
+
+## Important notes
+
+1. A workflow README is included to guide the user through the data 
+cleaning process.
+
+2. All of the files have been checked prior to pushing to the repository. 
+All data files and scripts work using relative file paths. The code should 
+be able to be run without any changes to the actual code. There are a few
+exceptions due to changes in accessing information from Google Maps, but
+those are noted on the individual files. 
+
+3. All of the R scripts use relative file paths. That is, if you want to 
+run a script you need to set the working directory to the source file and 
+the code should run correctly. However, we left a bunch of code that has
+been commented out because it may be interesting to the user. This code
+was not checked for relative paths and may not run without some tinkering.
+
+4. The majority of the maps used in the graphs came from the fiftystater 
+package. Unfortunately, the package was retired from CRAN shortly after the 
+Data Expo. Data was also obtained from the retired package weatherData. 
+The tarbells for these packages are included in the base directory of 
+this repository and can be installed from the base directory using the 
+following commands: 
+install.packages("fiftystater_1.0.1.tar.gz", repos = NULL, type = "source")
+install.packages("../weatherData_0.5.0.tar.gz", repos = NULL, type = "source")
+Note that there is a script that will install all of the packages needed, 
+including the two tarbells. 
+
+#==============================================================================
+
+
+###############################################################################
+##
+## 							Folders and files
+##
+###############################################################################
+
+The following sections describe the files and folders in each of the main 
+folders in the repository
+
+
+#==============================================================================
+
+
+###############################################################################
+#
+# 								data
+#
+###############################################################################
+
+Contains all of the data for the analyses done for the presentation and the 
+paper. It contains datasets and information obtained from outsided sources 
+that were used to verify data from the dataset provided for the Data Expo. It 
+does not contain the data used for the Shiny App, although data from this 
+folder was used to create those datasets. The first section contains the 
+data files used in the main analysis. Other data files used to verify 
+information or to fill in missing data are described later. 
+
+## Primary data files
+
+# forecast.dat: original forecast dataset provided by the Data Expo. 
+
+# histWeather.csv: original weather dataset provided by the Data Expo. 
+
+# locations.csv: original location dataset provided by the Data Expo. 
+
+# baltWind.csv: contains wind data from Baltimore, MD. 
+
+# censusFigs.R: contains population of the cities in the main dataset. They
+were obtained from census.gov.
+
+# cluster_summary.csv: created by cluster_datasets.R. 
+Contains the cluster assignments for each city for 5-8 clusters. We 
+settled on 6 clusters for this analysis so that is what is seen 
+in the paper and presentation. 
+
+# clusterMapFinal.csv: data used to create the cluster maps. It is used
+in the finalPCP.R script to 
+
+# Combined_for_Clustering.csv: dataset created to do some 
+exploration of the clusters in the pointMicro.R script.
+
+# Combined_for_Clustering_Bean.csv: dataset created to do some 
+exploration of the clusters in the pointMicro.R script.
+
+# locationsFinal.csv: created with final_location_clean.R. It contains 
+data about each of the cities that are used in the plots and analysis
+including the cluster assignment for each city.
+
+# locationsFinal_preclust.csv: created with final_location_clean.R. It 
+contains the information needed to create the summary data files. They 
+are needed to create the clusters and many of the graphics. 
+
+# final_weather.csv: created with observation_final_clean.R
+
+# final_forecast.csv: created with forecast_final_clean.R. Contains the
+cleaned weather forecasts in long form. It is generated from the forecast.dat
+file provided by the Data Expo. 
+
+# PrecipErrors.csv: contains different measures for the precipitation
+errors. Used in the script pointMicro.R for data exploration.
+
+# summary_city_month_lag.csv: created with the final_data_summaries.R 
+script in the data cleaning_folder. It contains the summary statistics
+for the recorded weather data for each city aggregated by month and forecast
+lag. It also includes the forecast errors by aggregated by month and with 
+the lag between the forecast date and the recorded results included in 
+the dataset.
+
+# summary_city_month.csv: created with the final_data_summaries.R 
+script in the data cleaning_folder. It contains the summary statistics
+for the recorded weather data for each city aggregated by month and forecast
+lab. It also includes the forecast errors.
+
+# summary_city_lag.csv: created with the final_data_summaries.R 
+script in the data cleaning_folder. It contains the summary statistics
+for the recorded weather data for each city aggregated by forecast
+lag. It also includes the forecast errors.
+
+# summary_city.csv: created with the final_data_summaries.R 
+script in the data cleaning_folder. It contains the summary statistics
+for the recorded weather data for each city. The data for all lags and 
+time frames has been aggregated so there is one observation for each metric
+per city. 
+
+# summary_lag_shiny.csv: created with final_lag_all_shiny.R. All of 
+the lags. This dataset is used for the shiny app. 
+
+# varNameLabels.csv: contains variable names to create plots. Used in 
+final_Random_Forests_VI.R
+
+
+## Folder: rain_check_files_for_specific_outliers
+Contains files that have the precipitation file for several cities with 
+suspicious amounts of precipitation reported. 
+
+## Folder: shorlineAK
+Contains the files needed to draw and measure from the Alaskan shoreline.
+
+## Folder: shorlineHA
+Contains the files needed to draw and measure from the Hawaiian shoreline. 
+
+## us_medium_shoreline
+Contains the files needed to draw and measure from the landlocked border
+of the U.S. This was needed to compute the distance to the shore. 
+
+
+#==============================================================================
+
+
+###############################################################################
+#
+#								rscripts
+#
+###############################################################################
+
+The following includes information about the R scripts in the rscripts folder. 
+Several folders are included in the main folder to 
+The first scripts that are listed are in order of work flow. That is, they 
+are the scripts that should be run first if you are going to run any of the 
+other files. After the initial work flow is listed, the rest of the files 
+are listed in order of where they appear in the folder. 
+
+1. packageInstall.R: installs all of the packages needed for the analysis, 
+including fiftystater. 
+
+
+###############################################################################
+#								data_cleaning
+###############################################################################
+
+# cluster_datasets.R: reads in the city data and adds the cluster information
+to create a more complete cluster summary dataset. 
+
+# final_data_summaries.R: reads in the city and final weather data files 
+and cleans the data and creates several summary datasets used in downstream 
+analysis. 
+
+# forecast_final_clean.R: reads in the original forecast dataset and 
+produces a cleaned forecast dataset that better incorporates location data. 
+
+# final_location_clean.R: reads in the location data and adds population 
+and cluster information for a more informative location dataset. 
+
+# Notes on Data Issues with Weather Data.pdf: This is a file that describes
+many of the most egregious errors seen in the original data. 
+
+# observation_final_clean.R: Reads in the original weather dataset and 
+outputs a cleaned dataset in longform. Missing data were replaced with real
+data when the information was available from NOAA or other weather sites. 
+Obvious data input errors were corrected or replaced with NAs. 
+
+# posterStoriesEDA: contains some code to verify some of the claims made
+in our poster. 
+
+
+###############################################################################
+#					    exploration_explanation
+###############################################################################
+
+# cluster_analysis.R: contains the code for the full cluster analysis, 
+including trying different clustering methods and dermining the number of 
+clusters. 
+
+# cluster_functions.R: contains functions used in cluster_analysis.R.
+
+# DACtutorial_master.R: contains code and comments for a tutorial on how 
+to adjust the glyphs so they aren't distorted in on the map. 
+
+# glyphTest2.R: contains some preliminary and exploratory code in creating
+the glyph map. The code does not work as is because google maps now requires
+an api. If you get an api, you can use the code with minor adjustments. 
+
+# pointMicro.R: contains code for micromap exploration done early in 
+the clustering phase. 
+
+###############################################################################
+#					           final_analysis
+###############################################################################
+
+# finalCorBarChart.R: produces an early, alternative version of the 
+correlation glyph. 
+
+# finalCorBarChart2.R: creates the correlations glyphs used in the paper 
+and poster. 
+
+# finalDendro.R: creates the dendrogram for the city clusters used in the 
+paper. 
+
+# finalGlypPlot: creates the seasonal glyph plots for the paper and poster.
+
+# finalMapScript.R: creates the main map showing the cluster assignments
+for each city. 
+
+# final_PCP.R: creates the parallel coordinate plot used in the poster and 
+paper. 
+
+# finalPointMicro.R: creates a final version of a micromap that we ended 
+up not using in the poster or paper. 
+
+# final_Random_Forests_VI.R: performs a variable importance analysis and 
+creates the parallel coordinate plots for variable importance used 
+in the paper a poster. 
+
+# final_Scatterplot_Lag.R: creates the scatterplots that show the 
+relationship between min temp, max temp, and precipitation forecast errors. 
+It creates the plots for the exploratory analysis, poster, and paper. 
+
+#==============================================================================
+
+
+###############################################################################
+#
+# 						    extra_information
+#
+###############################################################################
+
+contains files that are supplementary to the analysis
+
+
+
+
+###############################################################################
+#
+# 								images
+#
+###############################################################################
+
+The images are separated into four primary folders. The figures used in the
+final poster or paper are in the final folder. The test folder contains 
+images that were used as preliminary or exploratory plots. The cluster folder
+contains the plots associated with the cluster analysis. The micromap folder
+contains micromaps that were used to assess variable importance, but were 
+not used in the final poster or paper. 
+
+
+
+
+###############################################################################
+#
+# 								shiny_app
+#
+###############################################################################
+
+contains all of the files for the shiny app associated with this 
+paper, including the data. The app.R file can be opened in R and the app 
+should be able to be launched without problem if all of the packages are 
+installed. Read the note on installing the package fiftystater in item 2
+under the important notes section above.
+
+
+ 
+
+
