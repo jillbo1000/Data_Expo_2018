@@ -27,7 +27,7 @@ locations <- read.csv("../../data/locations.csv")
 # Obtain elevation values for locations from Google
 # https://developers.google.com/maps/documentation/elevation/intro
 # Use google server api key
-# apikey <- "AIzaSyBccjDrgyqDRlIQ83M5Y3XamlWNlWOLWNk"
+# apikey <- NA # use your own api
 # 
 # locations$elevation <- -9999
 # for(i in 1:nrow(locations)){
